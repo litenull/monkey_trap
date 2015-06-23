@@ -1,0 +1,14 @@
+{
+  "name": "js-nacl",
+  "homepage": "https://github.com/tonyg/js-nacl",
+  "version": "0.6.0",
+  "_release": "0.6.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.6.0",
+    "commit": "b2e62cf6f7f13136ace597a61c990f97910efd63"
+  },
+  "_source": "git://github.com/tonyg/js-nacl.git",
+  "_target": "0.6.0",
+  "_originalSource": "js-nacl"
+}

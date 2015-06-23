@@ -1,0 +1,19 @@
+{
+  "name": "monkey_trap",
+  "version": "0.0.0",
+  "authors": [
+    "Tomaz Korenika <litenull@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "js-nacl": "0.6.0",
+    "jquery" : "2.0.0"
+  }
+}

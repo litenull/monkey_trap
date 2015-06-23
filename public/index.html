@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <link href="flat-ui/dist/css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="flat-ui/dist/css/flat-ui.css" rel="stylesheet">
+    <script src="build.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div style="text-align:center">
+        <h3>Monkey Trap!</h3>
+        Find out who is reading your email. <br />
+        Monkey Trap is a small tool that identifies eavesdroppers that read your email. <br />
+        It is a URL shortener that logs every request and displays potential eavesdroppers. <br />
+        <strong>New User ?</strong>
+        <div class="row" style="width:300px; margin:0 auto">
+          <div class="row" style="width:300px; margin:0 auto">
+            <div class="col-s-3">
+              <div class="form-group">
+              <div class="col-s-3">
+                <div class="form-group">
+                  <input type="text" value="" placeholder="Enter secret" class="form-control" id="secret_password">
+                </div>
+              </div>
+                <input type="text" value="" placeholder="Enter context" class="form-control" id="context">
+              </div>
+            </div>
+            <div class="col-s-3">
+              <div class="form-group">
+                <input type="text" value="" placeholder="Enter redirect URL" class="form-control" id="redirect_url">
+              </div>
+            </div>
+          </div>
+          <div class="col-s-3">
+            <a href="#" class="btn btn-block btn-lg btn-success" id="create_link">Create New Link</a>
+          </div>
+        </div> <br />
+        <div style="display:none" class="link">
+          <div> Link Created! </div>
+          <strong>Secret: <div id="secret_key"></div></strong>
+          <strong>Url: <div id="link"></div></strong>
+          <strong>View id: <div id="view_id"></div></strong>
+        </div>
+        <br>
+        <strong>Have a URL you want to inspect? </strong>
+        <div class="row" style="width:300px; margin:0 auto">
+          <div class="col-s-3">
+            <div class="form-group">
+              <input type="text" value="" placeholder="Enter secret" class="form-control" id="secret">
+            </div>
+          </div>
+          <div class="col-s-3">
+            <div class="form-group">
+              <input type="text" value="" placeholder="Enter link ID" class="form-control" id="id">
+            </div>
+          </div>
+        </div>
+        <div class="row" style="width:300px; margin:0 auto">
+          <div class="col-s-3">
+            <a href="#" class="btn btn-block btn-lg btn-info" id="get_data">Unpack data</a>
+          </div>
+        </div>
+        <div>
+          <div class="data">
+          </div>
+        </div>
+      <br>
+      <br>
+      Monkey Trap uses NaCl library to encrypt data. No password data is transferred to the server. Data is wiped after 30 days.
+    </div>
+  </body>
+</html>

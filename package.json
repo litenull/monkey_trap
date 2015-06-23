@@ -1,0 +1,24 @@
+{
+  "name": "monkey_trap",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Tomaz Korenika",
+  "keywords": [
+  ],
+  "dependencies": {
+    "async": "0.9.0",
+    "minimist": "1.1.0",
+    "underscore": "1.7.0",
+    "handlebars": "2.0.0",
+    "express": "4.12.2",
+    "node-libuuid": "1.1.0",
+    "mongoose": "3.8.24",
+    "body-parser": "1.12.0",
+    "browserify": "9.0.3"
+  },
+  "scripts": {
+    "build-app": "browserify public/app.js -o public/build.js",
+    "build-client": "browserify public/client.js -o public/main.js",
+    "build": "npm run build-app & npm run build-client"
+  }
+}
